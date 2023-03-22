@@ -11,7 +11,9 @@ func main() {
 			break
 		}
 		w := []byte(seq)
-		reverseComplement(w)
-		fmt.Printf("           %v\n", string(w))
+		vRC := reverseComplement(w)
+		vC := complement(w)
+		fmt.Printf("         c:%v\n", string(vC))
+		fmt.Printf("        rc:%v\n", string(vRC))
 	}
 }
